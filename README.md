@@ -49,10 +49,27 @@ return []</pre>
 - app resets to empty notes
 - User can continue
 
+Learning: Always handle missing file when working with file systems
 
-Learning: Always handle missing file whrn working with file systems
+**Empty title accepted**
+This issue can be solved by validation and rules
+
 
 
 ## Improvement / Future Enhancement
 ## Key Learnings
+create a new repository on git.com
+keep it public
+do not add repository
+once the repository is created, copy the command that git provided and paste in the vs code terminal
+
+Enumerating objects: 5, done.
+Counting objects: 100% (5/5), done.
+Delta compression using up to 16 threads
+Compressing objects: 100% (5/5), done.
+Writing objects: 100% (5/5), 2.16 KiB | 2.16 MiB/s, done.
+Total 5 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/HudaPatel45/cloud-study-notes.git
+ * [new branch]      main -> main
+branch 'main' set up to track 'origin/main'. means your code is being pushed
 ## Screenshots
