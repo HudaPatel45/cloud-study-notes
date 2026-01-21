@@ -1,23 +1,6 @@
 import json
 from datetime import datetime
-
-NOTES_FILE = "notes.json"
-
-def load_notes():
-    try:
-        with open(NOTES_FILE, "r") as file:
-            content = file.read().strip()
-            if not content:
-                return []
-            return json.loads(content)
-    except (FileNotFoundError, json.JSONDecodeError):
-        return []
-   
-        
-
-def save_notes(notes):
-    with open(NOTES_FILE, "w") as file:
-        json.dump(notes, file, indent=4)
+from azure_storage import load_notes, save_notes
 
 def add_note(title, topic):
     title = title.strip('!') # the strip() function removes all type of white spaces or special characters in the brackets, the ! in the bracket was removed when data was entered with ! 
@@ -53,6 +36,10 @@ def add_note(title, topic):
 
 def view_notes():
     notes = load_notes()
+    if not notes:
+        print("No notes available.")
+        return
+    
     for idx, note in enumerate(notes, start=1):
         print(f"{idx}. {note['title']} - {note['topic']}")
 
