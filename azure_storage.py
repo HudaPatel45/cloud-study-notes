@@ -22,4 +22,4 @@ def load_notes():
     
 def save_notes(notes):
     blob = get_blob_client()
-    blob.upload_blob(json.dumps(notes), overwrite=True)
+    blob.upload_blob(json.dumps(notes), overwrite=True) #upload notes.json to azure blob storage
