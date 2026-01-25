@@ -2,7 +2,7 @@
 
  Cloud Study Notes App(Python)
 
- This is a beginner-friendly Python CLI application that allows users to add and view the notes that are stored in a JSON file and include a title, topic, and timestamp.
+ This is a beginner-friendly Python CLI application that allows users to add and view notes that are stored in a JSON file and include a title, topic, and timestamp.
 
 ## Tech Stack
 
